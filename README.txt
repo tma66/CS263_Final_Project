@@ -14,12 +14,17 @@ Install requirements
 
 Download and setup LLM server. Download and install ollama from https://ollama.com. Note this tool is used to pull open source models
 
-    ollama pull codellama 
+    ollama pull qwen2.5-coder:32b 
 
-## Demos
+## Detecting Secure Code
+During the first phase of our approach, we want to evaluate LLM's abilities for detecting vulnerabilities, with and without guidance. Dataset comes from OWASP and contains 110 test cases, stored under `detection/benchmark`
 
-    cd demo
+    cd detection/open_llm # if evaluating open source models
 
-Example. Run llm demo
+Evaluate without guidance
 
-    python3 codellama_demo.py
+    python3 evaluate_general.py
+
+Evaluate with guidance
+
+    python3 evaluate_specific.py
