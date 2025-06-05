@@ -55,7 +55,7 @@ Open the `openai_generate.ipynb` Jupyter notebook and execute the cells in order
 2. Generate code for each model: `gpt-3.5-turbo`, `gpt-4-turbo`, `gpt-4o-mini`, `gpt-4.1`
 
 ### Evaluate with SonarQube
-SonarQube analysis is performed automatically via the GitHub Action defined at `.github/workflows/sonarqube.yml`. Analysis is run every time code is pushed to this repository. Results can be found here: 
+SonarQube analysis is performed automatically via the GitHub Action defined at `.github/workflows/sonarqube.yml`. Analysis is run every time code is pushed to this repository. Results can be found here: https://sonarcloud.io/summary/overall?id=lylebarner_COMSCI263-final-project&branch=main
 
 ### Evaluate with Bandit
 
